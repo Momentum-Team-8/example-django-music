@@ -1,4 +1,12 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block javascript %}
+<script src= {% static 'js/.env.js' %}></script>
+<script src= {% static 'js/openweather_api.js' %} defer></script>
+{% endblock javascript %}
+
+
 
 {% block content %}
 <h1>Homepage</h1>
